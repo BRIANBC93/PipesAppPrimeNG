@@ -6,34 +6,36 @@ import { NoComunesComponent } from './ventas/pages/no-comunes/no-comunes.compone
 import { NumerosComponent } from './ventas/pages/numeros/numeros.component';
 import { OrdenarComponent } from './ventas/pages/ordenar/ordenar.component';
 
-const routes: Routes =[
+
+const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: BasicosComponent,
     pathMatch: 'full'
   },
   {
-    path:'numeros',
+    path: 'numeros',
     component: NumerosComponent,
   },
   {
-    path:'no-comunes',
+    path: 'no-comunes',
     component: NoComunesComponent,
   },
   {
-    path:'ordenar',
+    path: 'ordenar',
     component: OrdenarComponent,
   },
   {
-    path:'**',
-    redirectTo: '',
+    path: '**',
+    redirectTo: ''
   }
+
 ];
 
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot( routes )
   ],
   exports: [
     RouterModule
