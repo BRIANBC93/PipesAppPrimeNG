@@ -10,7 +10,7 @@ import { interval } from 'rxjs';
 export class NoComunesComponent  {
 
   // i18nSelect
-  nombre: string = 'Fernando';
+  nombre: string = 'Brian';
   genero: string = 'masculino';
   invitacionMapa = {
     'masculino': 'invitarlo',
@@ -18,7 +18,7 @@ export class NoComunesComponent  {
   }
 
   // i18nPlural
-  clientes: string[] = ['Maria', 'Pedro', 'Hernando', 'Eduardo','Fernando'];
+  clientes: string[] = ['Maria', 'Pedro', 'Hernando', 'Eduardo','Brian'];
   clientesMapa = {
     '=0': 'no tenemos ningún cliente esperando.',
     '=1': 'tenemos un cliente esperando.',
@@ -38,9 +38,9 @@ export class NoComunesComponent  {
 
   // KeyValue Pipe
   persona = {
-    nombre: 'Fernando',
-    edad: 35,
-    direccion: 'Ottawa, Canadá'
+    nombre: 'Brian',
+    edad: 29,
+    direccion: 'Bogotá, Colombia'
   }
 
   // JsonPipe
